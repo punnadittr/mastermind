@@ -159,7 +159,7 @@ class Mastermind
 
   #push the value to left or right accordingly to their quantity (num is qty)
   def left_right?
-    # (i+2) here represents the actual code number itself ex. 0+2 = 2 then fill number 21
+    # (i+2) here represents the actual code number itself ex. 0+2 = 2 then fill number 2
     @black_pegs.each_with_index do |num, i|
       @right_part.fill(i+2, @right_part.size, num) if num != 0
     end
